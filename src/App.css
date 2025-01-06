@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+.hello1{
+    box-shadow: 1px 1px 130px aqua;
+    background: transparent;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hello2{
+    
+    background-color: #000814;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homepage_bg{
+    background-image: url("./assets/Images/bghome.svg");
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.clipped-ellipse {
+    width: 450px;
+    height: 300px;
+    background-color: white;
+    border-radius: 100px;
+    /* clip-path: ellipse(50% 35% at 50% 50%); */
+    /* box-shadow: 1px 1px 10px yellow; */
+    filter:drop-shadow(10px 10px 50px aqua)
 }
-
-.App-link {
-  color: #61dafb;
+.bg1{
+    background-image: url('../src/assets/MeraAssets/img2.jpg');
+    background-position: center;
+    background-size: cover;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg2{
+    background-image: url('../src/assets/MeraAssets/img3.jpg');
+    background-position: center;
+    background-size: cover;
 }
+.bg3{
+    background-image: url('../src/assets/MeraAssets/img1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.catalog_square_div::before{
+    content: ' ';
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg) translateY(-20px);
+    z-index: -5;
+}
+/* bg-pure-greys-5 h-[30px] w-[30px] absolute top-0 */
+/* rotate-45 left-[50%] translate-x-5 translate-y-5  transition-all duration-200 z-[-2] */
